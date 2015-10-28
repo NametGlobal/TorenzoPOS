@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RTI-4A-kaw">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Adminpage-->
+        <scene sceneID="GpW-bm-Mgi">
+            <objects>
+                <viewController id="UVK-Jl-GtI" customClass="adminpage" customModule="SampleApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ijI-Rq-c7b"/>
+                        <viewControllerLayoutGuide type="bottom" id="r1F-gf-DSM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IsE-3h-6RB">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="spn-Zz-kSs">
+                                <rect key="frame" x="0.0" y="239" width="768" height="44"/>
+                                <animations/>
+                                <color key="barTintColor" red="0.46109521390000002" green="0.46539771559999998" blue="0.90801531079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem id="xY6-fw-Fd1"/>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sAN-L0-MOO">
+                                <rect key="frame" x="0.0" y="283" width="768" height="44"/>
+                                <animations/>
+                                <color key="barTintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="7rc-xp-1Ck"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="listcell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SKT-al-Qa5">
+                                <rect key="frame" x="0.0" y="366" width="387" height="638"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Kyz-Zy-Jta">
+                                        <rect key="frame" x="0.0" y="28" width="387" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kyz-Zy-Jta" id="b7E-YP-Gm7">
+                                            <rect key="frame" x="0.0" y="0.0" width="387" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7L-c8-H6l">
+                                <rect key="frame" x="0.0" y="327" width="308" height="31"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.25118452629999999" green="0.68379910369999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5W-10-zqp">
+                                <rect key="frame" x="496" y="940" width="71" height="64"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="All">
+                                    <color key="titleColor" red="0.30743539920000001" green="0.91671301760000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2p1-3j-h01">
+                                <rect key="frame" x="678" y="940" width="71" height="64"/>
+                                <animations/>
+                                <state key="normal" title="Sent">
+                                    <color key="titleColor" red="0.30743539920000001" green="0.91671301760000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMd-bW-t7J">
+                                <rect key="frame" x="589" y="940" width="71" height="64"/>
+                                <animations/>
+                                <state key="normal" title="Unsent">
+                                    <color key="titleColor" red="0.30743539920000001" green="0.91671301760000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncg-UT-530">
+                                <rect key="frame" x="407" y="940" width="71" height="64"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.30743539920000001" green="0.91671301760000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="btnall" destination="l5W-10-zqp" id="2et-SQ-P84"/>
+                        <outlet property="btnplus" destination="Ncg-UT-530" id="YK2-lb-VP7"/>
+                        <outlet property="btnsent" destination="2p1-3j-h01" id="9Cs-ge-cuz"/>
+                        <outlet property="btnunsent" destination="UMd-bW-t7J" id="dJB-hf-hLN"/>
+                        <outlet property="tableview" destination="SKT-al-Qa5" id="pX9-zq-N2x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTZ-Z1-tQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4468" y="-2846"/>
+        </scene>
+        <!--Initial view-->
+        <scene sceneID="vFo-qP-260">
+            <objects>
+                <viewController storyboardIdentifier="login" title="Initial view" modalTransitionStyle="flipHorizontal" id="RTI-4A-kaw" customClass="ViewController" customModule="SampleApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Aw3-oF-sk3"/>
+                        <viewControllerLayoutGuide type="bottom" id="2iv-BQ-z22"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="center" id="iaO-Uq-RQS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter secure code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1O-ZR-7NU">
+                                <rect key="frame" x="243" y="333" width="200" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rmz-mD-1uC">
+                                <rect key="frame" x="0.0" y="240" width="768" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Login Screen" id="sez-XU-XaI"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tm0-65-CVF">
+                                <rect key="frame" x="369" y="465" width="80" height="70"/>
+                                <animations/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKy-Gg-UeJ">
+                                <rect key="frame" x="237" y="465" width="80" height="70"/>
+                                <animations/>
+                                <size key="titleShadowOffset" width="40" height="2"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.borderWidth">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="self.layer.borderColor">
+                                        <color key="value" red="0.96717542409896851" green="0.30308881402015686" blue="0.014240854419767857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiB-ns-4HK">
+                                <rect key="frame" x="494" y="465" width="80" height="70"/>
+                                <animations/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4z-Fo-Rci">
+                                <rect key="frame" x="237" y="558" width="80" height="70"/>
+                                <animations/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJw-0U-XZK">
+                                <rect key="frame" x="369" y="558" width="80" height="70"/>
+                                <animations/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vp9-3u-ho2">
+                                <rect key="frame" x="494" y="558" width="80" height="70"/>
+                                <animations/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-le-EqH">
+                                <rect key="frame" x="237" y="654" width="80" height="70"/>
+                                <animations/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCg-gY-BMV">
+                                <rect key="frame" x="369" y="654" width="80" height="70"/>
+                                <animations/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMa-dW-T5O">
+                                <rect key="frame" x="494" y="654" width="80" height="70"/>
+                                <animations/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeg-Zn-f1g">
+                                <rect key="frame" x="243" y="744" width="80" height="70"/>
+                                <animations/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qez-nI-SGO">
+                                <rect key="frame" x="369" y="744" width="80" height="70"/>
+                                <animations/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-JM-v6Z">
+                                <rect key="frame" x="491" y="744" width="80" height="70"/>
+                                <animations/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="22" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="j18-DY-ulX">
+                                <rect key="frame" x="243" y="380" width="193" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNP-Zk-vYa">
+                                <rect key="frame" x="451" y="348" width="53" height="71"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="8f545d1a-b938-4a9e-8932-5e90b4cef8fc.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hit-Zy-5w8">
+                                <rect key="frame" x="512" y="348" width="59" height="69"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="aec3d093-7177-47f1-b39a-a0aa9970af4d.jpg"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4W-wF-OpJ">
+                                <rect key="frame" x="254" y="883" width="326" height="60"/>
+                                <animations/>
+                                <state key="normal" title="Clock-in-Out">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clockin:" destination="RTI-4A-kaw" eventType="touchUpInside" id="3T7-lJ-OJD"/>
+                                    <segue destination="FVL-hv-fiB" kind="showDetail" id="CdC-jz-qac"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.46109521389007568" green="0.46539771556854248" blue="0.90801531076431274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="btnclockin" destination="H4W-wF-OpJ" id="T09-CH-CUZ"/>
+                        <outlet property="btneight" destination="qCg-gY-BMV" id="Gi9-Hb-9qQ"/>
+                        <outlet property="btnfifth" destination="hJw-0U-XZK" id="Zsm-Vd-bT3"/>
+                        <outlet property="btnfirst" destination="WKy-Gg-UeJ" id="rhL-Bn-ewa"/>
+                        <outlet property="btnfourth" destination="b4z-Fo-Rci" id="oOe-2H-UUa"/>
+                        <outlet property="btnnext" destination="iqp-JM-v6Z" id="qVV-QL-OA0"/>
+                        <outlet property="btnnine" destination="nMa-dW-T5O" id="4M0-ax-GyJ"/>
+                        <outlet property="btnprev" destination="xeg-Zn-f1g" id="Jsq-wR-ufO"/>
+                        <outlet property="btnsecond" destination="Tm0-65-CVF" id="hRo-DV-lQQ"/>
+                        <outlet property="btnseven" destination="nyd-le-EqH" id="6Je-Hh-INq"/>
+                        <outlet property="btnsix" destination="vp9-3u-ho2" id="PzC-Qf-CNE"/>
+                        <outlet property="btnthird" destination="oiB-ns-4HK" id="cf7-g1-YNJ"/>
+                        <outlet property="btnzero" destination="Qez-nI-SGO" id="P8t-UI-kpK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Yy-rq-86U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3652" y="-882"/>
+        </scene>
+        <!--Clockin-->
+        <scene sceneID="zWE-yy-6il">
+            <objects>
+                <viewController id="FVL-hv-fiB" customClass="Clockin" customModule="SampleApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vIZ-bL-G0h"/>
+                        <viewControllerLayoutGuide type="bottom" id="L1s-zk-hGL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rfI-bw-25u">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UA0-yL-bBa">
+                                <rect key="frame" x="120" y="347" width="563" height="578"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJB-sE-EqI">
+                                        <rect key="frame" x="142" y="190" width="278" height="60"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Kitchen">
+                                            <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHs-IT-M6f">
+                                        <rect key="frame" x="142" y="272" width="278" height="60"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Cashier">
+                                            <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjP-Ro-DCw">
+                                        <rect key="frame" x="142" y="363" width="278" height="60"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Waiter">
+                                            <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3S-B9-Xhn">
+                                        <rect key="frame" x="227" y="480" width="123" height="60"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.058644585311412811" green="0.11185529083013535" blue="0.96589761972427368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="RTI-4A-kaw" kind="show" id="Utz-Uy-lgN"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gopal . S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRq-3e-z1O">
+                                        <rect key="frame" x="34" y="29" width="134" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxQ-3h-0u2">
+                                        <rect key="frame" x="138" y="111" width="278" height="60"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Server">
+                                            <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="UVK-Jl-GtI" kind="show" id="IPH-fZ-x49"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10.11 A.M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48T-jG-B87">
+                                        <rect key="frame" x="436" y="29" width="108" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6x-ha-6Xj">
+                                <rect key="frame" x="120" y="303" width="563" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Clock-in" id="Tsd-1b-O5q"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.37031692266464233" green="0.18166619539260864" blue="0.92780238389968872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="btncancel" destination="t3S-B9-Xhn" id="GyW-V5-Aiz"/>
+                        <outlet property="btncashier" destination="qHs-IT-M6f" id="8gf-mW-quf"/>
+                        <outlet property="btnkitchen" destination="DJB-sE-EqI" id="Yd5-oL-Pyl"/>
+                        <outlet property="btnserver" destination="GxQ-3h-0u2" id="UsD-vg-Bh3"/>
+                        <outlet property="btnwaiter" destination="LjP-Ro-DCw" id="SKe-a7-0QM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFo-Fi-Lvn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3201" y="-1803"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="8f545d1a-b938-4a9e-8932-5e90b4cef8fc.png" width="220" height="220"/>
+        <image name="aec3d093-7177-47f1-b39a-a0aa9970af4d.jpg" width="160" height="160"/>
+    </resources>
+</document>
